@@ -1,0 +1,177 @@
+/* CSS import statement used to load a Google Font into your website. */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+/* Hover effect for brand */
+.navbar-brand:hover {
+  color: #ffc107 !important;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for nav links */
+.nav-link:hover {
+  color: #ffc107 !important;
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
+
+.fade-transition {
+  animation: fadeTheme 0.5s ease-in-out;
+}
+
+@keyframes fadeTheme {
+  from {
+    /* opacity Controls transparency: 1 = fully visible, 0 = fully transparent */
+    opacity: 0.3;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* Sidebar animation */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(
+      -225px
+    ); /* shifts the element 225 pixels to the left */
+
+    opacity: 0;
+  }
+  to {
+    transform: translateX(
+      0
+    ); /* brings the element back to its original position */
+
+    opacity: 1;
+  }
+}
+
+.sidebar {
+  animation: slideInLeft 0.4s ease-out;
+}
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s ease;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 5px 0;
+}
+
+.sidebar a:hover {
+  color: orange;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  transform: scale(1.01);
+}
+
+.card {
+  transition: transform 0.3s ease-in-out, background-color 0.4s ease,
+    color 0.4s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.theme1 {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+  padding: 1rem;
+}
+
+.theme2 {
+  font-family: "Georgia", serif;
+  padding-left: 220px;
+  background-color: #121212;
+  color: white;
+}
+
+.theme3 {
+  font-family: "Pacifico", cursive;
+  padding: 3rem 1.5rem;
+  background-color: #fff3cd;
+  color: #212529;
+}
+
+.theme3 .card {
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  background-color: #fffbf2;
+  color: #333;
+  border: 2px dashed #f39c12;
+}
+
+.theme2 .sidebar {
+  width: 200px;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  height: 100%;
+  background: #333;
+  color: white;
+  padding: 1rem;
+  z-index: 1000;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+.about-container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.about-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-paragraph {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.about-button {
+  padding: 10px 20px;
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.about-button:hover {
+  background-color: #303f9f;
+  color: #f39c12;
+  transform: scale(1.05);
+}
+
+.card-list {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 200px;
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: #424242;
+  color: white;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+}
