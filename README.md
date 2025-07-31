@@ -39,7 +39,7 @@ It is a responsive React application (created using vite) that demonstrates them
 
 ```bash
 # 1. Clone or download this repo using download zip file in github repo link
-cd multi-theme-switcher
+cd Multi-theme-switcher_App
 
 # 2. Install all dependencies using this command on your terminal
 npm install
